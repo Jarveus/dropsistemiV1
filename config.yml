@@ -1,0 +1,80 @@
+# ==========================================
+#         Drop Sistemi - Ayarlar
+# ==========================================
+
+# Genel Ayarlar
+prefix: "&8[&6Drop&8] &7"
+
+# Drop süresi (saniye cinsinden)
+# Bu süre dolduğunda drop herkes tarafından alınabilir
+drop-suresi: 30
+
+# Parti Desteği
+# true ise sahibinin partisi de dropları alabilir (MMOCore desteklenir)
+parti-destegi: true
+
+# Hologram Ayarları
+hologram:
+  aktif: true
+  # Hologram yüksekliği (item üzerinden)
+  yukseklik: 1.5
+  # Hologram satırları
+  # Kullanılabilir placeholderlar: {item}, {oyuncu}, {sure}, {despawn}
+  satirlar:
+    - "&f{item}"
+    - "&7{oyuncu} &8| &e{sure}s"
+  
+  # Koruma süresi dolunca (herkes alabilirken) görünecek satırlar
+  # Boş bırakılırsa hologram silinir
+  kamu-satirlar:
+    - "&f{item}"
+    - "&aHerkes Alabilir &8| &c{despawn}s"
+
+# Temizleme Ayarları
+temizleme:
+  # Temizleme kontrolü kaç tickte bir yapılsın (20 tick = 1 saniye)
+  aralik: 20
+
+# Mesajlar
+mesajlar:
+  alma-engel: "&cBu eşya &e{oyuncu} &ctarafından öldürülen mobdan düştü! &7({sure}s kaldı)"
+  sure-doldu: "&aBu drop artık herkes tarafından alınabilir."
+  reload: "&aConfig başarıyla yeniden yüklendi."
+  bilgi: "&eAktif drop sayısı: &f{sayi}"
+  temizlendi: "&aTüm aktif droplar temizlendi. &7({sayi} adet)"
+  yetki-yok: "&cBu komutu kullanmak için yetkiniz yok."
+
+# Eşya İsimleri (Eşleme)
+# Buraya eklediğiniz eşyalar hologramda belirttiğiniz isimle görünür.
+# Format: "MATERIAL_ISMI: Gorunmesini Istediginiz Isim"
+# Veya MMOItems ID'si için: "MMOITEM_ID: Gorunmesini Istediginiz Isim"
+esya-isimleri:
+  # --- Vanilla & Custom ---
+  DIAMOND: "&bElmas"
+  GOLD_INGOT: "&eAltın Külçesi"
+  EMERALD: "&aZümrüt"
+  DEMIR_KILIC: "&f&lDemir Kılıç"
+
+  # --- MATERIAL Category ---
+  MATERIAL:
+    MAVI_KRISTAL: "&fɢöᴋ ᴍᴀᴠɪѕɪ ᴋʀɪѕᴛᴀʟ"
+    NADIR_KRISTAL: "&fᴇғѕᴜɴʟᴜ ᴋʀɪѕᴛᴀʟ"
+    MITRIL_PARCASI: "&fᴍɪᴛʀɪʟ ᴘᴀʀçᴀѕɪ"
+    MITRIL_BAR: "&fɪşʟᴇɴᴍɪş ᴍɪᴛʀɪʟ"
+    RUN_PARCASI: "&fᴋᴀᴅɪᴍ ʀüɴ ᴘᴀʀçᴀѕɪ"
+    RUBY_KRISTAL: "&fʏᴀᴋᴜᴛ ᴋʀɪѕᴛᴀʟɪ"
+    T1_BOW_ARTIFACT: "&fᴀᴠᴄɪɴɪɴ ʏᴀᴅɪɢᴀʀɪ"
+    T1_SWORD_ARTIFACT: "&fѕᴀᴠᴀşçɪɴɪɴ ʏᴀᴅɪɢᴀʀɪ"
+    T1_STAFF_ARTIFACT: "&fʙɪʟɢɪɴɪɴ ʏᴀᴅɪɢᴀʀɪ"
+    T1_SHIELD_ARTIFACT: "&fᴍᴜʜᴀғɪᴢɪɴ ʏᴀᴅɪɢᴀʀɪ"
+    ACEMI_TAMIR_KITABI: "&fᴀᴄᴇᴍɪ ᴛᴀᴍɪʀ ᴋɪᴛᴀʙɪ"
+    USTA_TAMIR_KITABI: "&fᴜѕᴛᴀ ᴛᴀᴍɪʀ ᴋɪᴛᴀʙɪ"
+    KAYIPBONUSU: "&fᴋᴀʏɪᴘ ʙᴏɴᴜѕᴜ"
+    TARIM_COIN: "&fᴛᴀʀɪᴍ ᴄᴏɪɴ"
+
+  # --- CONSUMABLE Category ---
+  CONSUMABLE:
+    RVPUAN: "&fʀᴇᴠᴇʀѕᴇ ᴘᴜᴀɴ"
+    TAMIRKITI: "&fᴛᴀᴍɪʀ ᴋɪᴛɪ"
+    KUCUK_CAN_IKSIRI: "&fᴋüçüᴋ ᴄᴀɴ ɪᴋѕɪʀɪ"
+    CAN_IKSIRI: "&fᴄᴀɴ ɪᴋѕɪʀɪ"
